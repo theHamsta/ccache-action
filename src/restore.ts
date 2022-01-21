@@ -10,7 +10,7 @@ async function install() {
   if (process.platform === "darwin") {
     await exec.exec("brew install ccache");
   } else {
-    await exec.exec("sudo apt-get install -y ccache");
+    await exec.exec("apt-get install -y ccache");
   }
 }
 
